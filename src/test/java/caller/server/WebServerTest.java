@@ -32,6 +32,7 @@ public class WebServerTest {
         myTestMap.put(":age", "37");
         Mockito.when(request.params()).thenReturn(myTestMap);
         assert myWebServer.greet(request).equals("Hello Hans you are 37");
+        assert false;
     }
 }
 
